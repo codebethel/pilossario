@@ -6,7 +6,7 @@
   <title>Pilossário — Proposta de Projeto</title>
   <style>
     /* ── PASSWORD GATE ── */
-    #auth-gaté {
+    #auth-gate {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
       z-index: 9999;
@@ -538,7 +538,7 @@
     <div class="auth-box">
       <div class="lock-icon">&#128274;</div>
       <h2>Acesso Restrito</h2>
-      <p>Documento confidencial — insira a senha para contínuar</p>
+      <p>Documento confidencial — insira a senha para continuar</p>
       <input type="password" id="password-input" placeholder="Digite a senha" autocomplete="off" autofocus>
       <button id="auth-submit">Acessar Documento</button>
       <div class="auth-error" id="auth-error"></div>
@@ -1636,7 +1636,7 @@
     async function authenticate() {
       const input = document.getElementById('password-input');
       const error = document.getElementById('auth-error');
-      const gaté = document.getElementById('auth-gate');
+      const gate = document.getElementById('auth-gate');
       const content = document.getElementById('presentation-content');
 
       const hash = await sha256(input.value);
